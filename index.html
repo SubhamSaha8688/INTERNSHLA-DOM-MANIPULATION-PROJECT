@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A student registration system for managing student records">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+    </header>
+
+    <main>
+        <section id="registration-form">
+            <h2>Student Registration</h2>
+            <form id="student-form">
+                <div class="form-group">
+                    <label for="student-name">Student Name:</label>
+                    <input type="text" id="student-name" name="student-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student-id" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact">Contact No:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+                <button type="submit" class="submit-btn">Register Student</button>
+            </form>
+        </section>
+
+        <section id="student-records">
+            <h2>Registered Students</h2>
+            <div id="records-container">
+                <table id="students-table" class="students-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students-list"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
